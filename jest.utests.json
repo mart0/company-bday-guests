@@ -1,0 +1,46 @@
+{
+    "testURL": "http://localhost/",
+    "globals": {
+        "ts-jest": {
+            "tsConfig": "./tsconfig.test.json",
+            "diagnostics": {
+                "ignoreCodes": [
+                    2539,
+                    2352,
+                    2540,
+                    2322,
+                    2349,
+                    7006,
+                    7034,
+                    7005
+                ]
+            }
+        }
+    },
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+        "src/**/*.ts"
+    ],
+    "coverageThreshold": {
+        "global": {
+            "branches": 80,
+            "functions": 80,
+            "lines": 0,
+            "statements": 80
+        }
+    },
+    "coveragePathIgnorePatterns": [
+        "src/index.ts",
+        "src/contracts"
+    ],
+    "testRegex": ".\/__utests__\/.*.test.ts$",
+    "transform": {
+        ".(ts)": "ts-jest"
+    },
+    "moduleFileExtensions": [
+        "ts",
+        "tsx",
+        "js",
+        "node"
+    ]
+}
