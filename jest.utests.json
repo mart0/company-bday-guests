@@ -30,8 +30,11 @@
         }
     },
     "coveragePathIgnorePatterns": [
-        "src/index.ts",
-        "src/contracts"
+        "(rest)",
+        "(contracts)",
+        "(data)",
+        "(utils)",
+        "index.ts"
     ],
     "testRegex": ".\/__utests__\/.*.test.ts$",
     "transform": {

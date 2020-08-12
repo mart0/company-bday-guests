@@ -23,6 +23,7 @@ npm i && npm run bnw && npm start
 ## Running Unit Tests
 
 ```sh
-1. $ npm run test
+npm run test or if you want to see the unit tests cove coverage, run
+npm run test:coverage
 ```
 

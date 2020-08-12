@@ -17,24 +17,6 @@
         "outDir": "./build/src",
         "baseUrl": ".",
         "paths": {
-            "casino-feeds-base": [
-                "./node_modules/casino-feeds-base/build/src"
-            ],
-            "metrics-influxdb": [
-                "./node_modules/casino-logger/types/metrics-influxdb.d.ts"
-            ],
-            "cucumber": [
-                "./types/cucumber"
-            ],
-            "casino-data": [
-                "./node_modules/casino-data/lib"
-            ],
-            "casino-logger": [
-                "./node_modules/casino-logger/lib"
-            ],
-            "moment": [
-                "./node_modules/moment/moment.d.ts"
-            ],
             "koa-bunyan-logger": [
                 "./types/koa-bunyan-logger"
             ]

@@ -1,7 +1,7 @@
 import * as Koa from "koa";
 import * as Router from "koa-router";
 import * as HttpStatusCodes from "http-status-codes";
-import { processHealthCheck } from "../../app/healthCheck";
+import { processHealthCheck } from "../../service/healthCheck";
 
 
 export function createServiceRouter(): Router {
@@ -9,7 +9,7 @@ export function createServiceRouter(): Router {
 
     router.get("/_healthcheck", async (ctx: Koa.Context) => {
         //tslint:disable-next-line:no-any no-unsafe-any     
-        const res = await processHealthCheck();
+        const res = await processHealthCheck(ctx);
 
         if (res?.isSuccessful) {
             ctx.status = HttpStatusCodes.OK;

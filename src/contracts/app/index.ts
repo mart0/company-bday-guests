@@ -1,1 +1,2 @@
-export * from "./partners";
+export * from "./Partners";
+export { UnsuccessfulResponse } from "./UnsuccessfulResponse";

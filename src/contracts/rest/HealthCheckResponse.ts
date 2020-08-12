@@ -3,9 +3,10 @@ export type HealthCheckResponse = {
     result: HealthCheckBody;
 };
 
-export type HealthCheckBody = {
+type HealthCheckBody = {
     version: string;
     source: string;
     message: string;
+    requestId: string;
     error?: string;
 };

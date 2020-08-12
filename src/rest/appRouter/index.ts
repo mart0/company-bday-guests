@@ -16,7 +16,7 @@ export function createAppRouter(): Router {
 
         if (!isWorking) {
             isWorking = true;
-            result = await sendInvitations();
+            result = await sendInvitations(ctx);
         }
 
         try {
