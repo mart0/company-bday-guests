@@ -7,10 +7,10 @@
     "clean": "del-cli ./build/**",
     "start": "node build/src/index",
     "prebuild": "npm run clean",
-    "build": "npm run clean && tsc -p tsconfig.json",
-    "lint": "tslint -p ./tsconfig.json -c tslint.json -t verbose --type-check",
+    "build": "npm run clean && tsc -p ./config/tsconfig.json",
+    "lint": "tslint -p ./config/tsconfig.json -c tslint.json -t verbose --type-check",
     "bnw": "npm run build",
-    "test": "jest --config=jest.utests.json --forceExit --detectOpenHandles",
+    "test": "jest --config=config/jest.utests.json --forceExit --detectOpenHandles",
     "test:coverage": "npm run test -- --coverage"
   },
   "author": "Martin Marinov",

@@ -1,8 +1,9 @@
 {
     "testURL": "http://localhost/",
+    "rootDir": "../",
     "globals": {
         "ts-jest": {
-            "tsConfig": "./tsconfig.test.json",
+            "tsConfig": "./config/tsconfig.test.json",
             "diagnostics": {
                 "ignoreCodes": [
                     2539,
@@ -23,10 +24,10 @@
     ],
     "coverageThreshold": {
         "global": {
-            "branches": 80,
-            "functions": 80,
-            "lines": 0,
-            "statements": 80
+            "branches": 100,
+            "functions": 100,
+            "lines": 100,
+            "statements": 100
         }
     },
     "coveragePathIgnorePatterns": [

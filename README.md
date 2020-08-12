@@ -38,3 +38,8 @@ or if you want to see the unit tests cove coverage:
 npm run test:coverage
 ```
 
+## Possible improvements
+
+* Add UI to the page using React or some template engine for nodejs such as pug or ejs;
+* Fix all linter errors in order to increase code quality;
+

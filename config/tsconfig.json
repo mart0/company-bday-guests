@@ -14,21 +14,21 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "watch": false,
-        "outDir": "./build/src",
+        "outDir": "../build/src",
         "baseUrl": ".",
         "paths": {
             "koa-bunyan-logger": [
-                "./types/koa-bunyan-logger"
+                "../types/koa-bunyan-logger"
             ]
         }
     },
     "compileOnSave": false,
     "include": [
-        "src"
+        "../src"
     ],
     "exclude": [
-        "node_modules",
-        "build",
-        ".vscode"
+        "../node_modules",
+        "../build",
+        "../.vscode"
     ]
 }
