@@ -1,8 +1,17 @@
-import * as fs from "fs";
-import { PartnerInfo } from "src/contracts";
+import * as fs from "fs-extra";
+import { PartnerInfo } from "../contracts";
 
+/**
+ * Reads partners file content using fs-extra package.
+ * If for some reason file reading was unsuccsessful, return
+ * an empty array and log the corresponding error.
+ *
+ * @param {string} filePath
+ * @param {any} log
+ * @param {string} requestId
+ */
+// tslint:disable:no-any
 export function readPartnersFile(filePath: string, log: any, requestId: string): PartnerInfo[] {
-    // tslint:disable-next-line:no-any
     let content: any;
     try {
         content = readFile(filePath, log, requestId);
@@ -25,7 +34,8 @@ function readFile(filePath: string, log: any, requestId: string, encoding: strin
         content = "";
     }
 
-    // Create an array with all partners
+    // Create an array with all partners or return empty one if
+    // the file path wasn't resolved successfuly
     return content !== "" ?
         content.split(/\r?\n/).filter(p => p !== "") :
         [];

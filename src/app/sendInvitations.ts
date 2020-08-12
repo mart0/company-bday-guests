@@ -23,5 +23,3 @@ export async function sendInvitations({ log: logger, reqId: requestId }: Koa.Con
     }).sort((a, b) => Number(a.partner_id) - Number(b.partner_id));
 }
 
-
-

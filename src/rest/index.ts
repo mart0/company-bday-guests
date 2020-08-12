@@ -16,13 +16,13 @@ export function main(): http.Server {
 
     // Logger middleware
     app.use(koaBunyanLogger())
-        .use(koaBunyanLogger.requestIdContext())
-    app.use(serviceRouter.routes());
+        .use(koaBunyanLogger.requestIdContext());
 
-    // Helper middlewares
+    // A body parser for koa, supports json
     app.use(bodyParser());
 
     app.use(appRouter.routes());
+    app.use(serviceRouter.routes());
 
     return http.createServer(app.callback());
 }
