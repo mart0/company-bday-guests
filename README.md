@@ -20,10 +20,21 @@ or just run these commands at once:
 npm i && npm run bnw && npm start
 ```
 
+Once the application is started, navigate to 
+```
+http://localhost:3001/sendInvitations
+```
+in order to see a list with nearby partners which will be invited.
+
+Other endpoints:
+
+* /_healthcheck - see if the application is up and running. It also prints the currenty version of the application.
+
 ## Running Unit Tests
 
 ```sh
-npm run test or if you want to see the unit tests cove coverage, run
+npm run test 
+or if you want to see the unit tests cove coverage:
 npm run test:coverage
 ```
 

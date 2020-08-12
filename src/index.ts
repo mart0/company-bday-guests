@@ -4,11 +4,13 @@ import * as constants from "../src/utils/constants";
 
 async function startService() {
     const server: http.Server = REST.main();
+    const port: number = constants.APP_PORT;
 
-    console.info("Starting server...", { port: constants.APP_PORT });
-    server.listen(constants.APP_PORT);
+    console.info(`Starting server on port ${port}...`);
+    server.listen(port);
 
-    console.info("Application started", { healthCheck: `${constants.HOSTNAME}:${constants.APP_PORT}/_healthcheck` });
+    console.info(`Application started. Please, navigate to ${constants.HOSTNAME}:${port}/sendInvitations
+    in order to see a list with nearby people which will be invited to the party.`);
 }
 
 startService();

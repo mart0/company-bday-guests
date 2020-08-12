@@ -4,8 +4,6 @@ import * as HttpStatusCodes from "http-status-codes";
 import { sendInvitations } from "../../app/sendInvitations";
 
 let isWorking = false;
-// tslint:disable-next-line no-any no-unsafe-any
-let result: Promise<any>;
 
 export function createAppRouter(): Router {
     const router: Router = new Router();
