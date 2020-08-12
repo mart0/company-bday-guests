@@ -7,5 +7,6 @@ module.exports = {
         longtitude: 23.351723
     },
     defaultRange: 100,
-    partnersFilePath: "/src/data/partners.json"
+    partnersFilePath: "/src/data/partners.json",
+    defaultEncoding: "utf8"
 };

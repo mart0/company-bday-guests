@@ -1,5 +1,3 @@
-import { PartnerInfo } from "../../src/contracts/app/partners";
-
 describe("Unit tests suite for testing findClosePartners function", () => {
     let findClosePartnersTest: any;
     let nearbyPartnersList = [];

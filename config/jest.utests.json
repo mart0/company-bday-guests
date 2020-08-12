@@ -34,7 +34,8 @@
         "(rest)",
         "(contracts)",
         "(data)",
-        "(utils)",
+        "utils/constants.ts",
+        "utils/unsuccessfulResp.ts",
         "index.ts"
     ],
     "testRegex": ".\/__utests__\/.*.test.ts$",

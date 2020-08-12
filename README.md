@@ -1,6 +1,6 @@
 # company-bday-guests
 
-company-bday-guests is an NodeJS application that is taking care for sending invitations to any company partner within 100km of our Sofia office for our company’s birthday celebration. 
+__company-bday-guests__ is a NodeJS application that is taking care for sending invitations to any company partner within 100km of our Sofia office for our company’s birthday celebration. 
 
 ## Running Locally
 
@@ -42,4 +42,5 @@ npm run test:coverage
 
 * Add UI to the page using React or some template engine for nodejs such as pug or ejs;
 * Fix all linter errors in order to increase code quality;
+* Add emails to all partners and send them actual invitations via email; Some Nodejs packages can be used such as [Nodemailer](https://www.w3schools.com/nodejs/nodejs_email.asp);
 

@@ -10,3 +10,4 @@ export const SOFIA_LAT: number = Number(config.get("SofiaCoordinates.latitude"))
 export const SOFIA_LONG: number = Number(config.get("SofiaCoordinates.longtitude")) || 23.351723;
 export const DEFAULT_RANGE: number = Number(config.get("defaultRange")) || 100; // in kilometers
 export const FILE_PATH: string = config.get("partnersFilePath") || "/src/data/partners.json";
+export const UTF8_ENCODING: string = config.get("defaultEncoding") || "utf8";
