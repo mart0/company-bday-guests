@@ -34,7 +34,7 @@ Other endpoints:
 
 ```sh
 npm run test 
-or if you want to see the unit tests cove coverage:
+or if you want to see the unit tests code coverage:
 npm run test:coverage
 ```
 
