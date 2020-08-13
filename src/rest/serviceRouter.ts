@@ -9,7 +9,6 @@ export function createServiceRouter(): Router {
     const router: Router = new Router();
 
     router.get("/_healthcheck", async (ctx: Koa.Context) => {
-        //tslint:disable-next-line:no-any no-unsafe-any
         const res = await processHealthCheck(ctx);
 
         if (res?.isSuccessful) {

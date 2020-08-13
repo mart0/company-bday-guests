@@ -19,14 +19,14 @@ describe("Unit tests suite for testing readPartnersFile function", () => {
         jest.clearAllMocks();
     });
 
-    test("should return empty array because something went wrong when reading the partners file", async () => {
+    test("should return empty array because the passed path to the file was not resolved successfuly", async () => {
         // Act
         const result = await readPartnersFileTest(undefined, ctx.log, ctx.reqId);
         // Assert
         expect(result).toEqual([]);
     });
 
-    test("should return array from type PartnerInfo[] containing a couple of partner names, coordinates, etc", async () => {
+    test("should return array from type PartnerInfo[] containing a couple of partner names, coordinates, etc.", async () => {
         // Act
         const result = await readPartnersFileTest(`${process.cwd()}${FILE_PATH}`, ctx.log, ctx.reqId);
         // Assert

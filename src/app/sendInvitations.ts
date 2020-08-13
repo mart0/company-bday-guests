@@ -15,11 +15,12 @@ export async function sendInvitations({ log: logger, reqId: requestId }: Koa.Con
         return unsuccessfulResponse;
     }
 
+    // Map only the props we need and sort the partners list by partner_id (ASC)
     return closePartners.map(p => {
         return {
             name: p.name,
             partner_id: p.partner_id
         };
-    }).sort((a, b) => Number(a.partner_id) - Number(b.partner_id));
+    }).sort((a, b) => a.partner_id - b.partner_id);
 }
 

@@ -15,8 +15,8 @@ describe("Unit tests suite for testing processHealthCheck function", () => {
         jest.clearAllMocks();
     });
 
-    test("should return a successful response containing app version, app name, reqId and harcoded message", async () => {
-        // Arrange 
+    test("should return a successful response containing app version, app name, reqId and hardcoded informative message", async () => {
+        // Arrange
         ctx = configureCtxMock();
         // Act
         const result = await processHealthCheckTest(ctx);

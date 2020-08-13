@@ -6,6 +6,9 @@ import { PartnerInfo } from "../contracts/app/partners";
  * based on given coordinates (Sofia's coordinates and range
  * are constants).
  *
+ * DEV NOTE: I would like to thank to Göran Andersson from Sweden for
+ * showing me this algorithm. Reference - http://jsfiddle.net/Guffa/57gQa/.
+ *
  * @param {PartnerInfo} partnersCoordinates
  */
 export function isPartnerNearby({ latitude: lat, longitude: lng }: PartnerInfo) {

@@ -28,7 +28,7 @@ in order to see a list with nearby partners which will be invited.
 
 Other endpoints:
 
-* /_healthcheck - see if the application is up and running. It also prints the currenty version of the application.
+* /_healthcheck - check if the application is up and running. It also prints the currenty version of the application.
 
 ## Running Unit Tests
 
@@ -37,6 +37,14 @@ npm run test
 or if you want to see the unit tests cove coverage:
 npm run test:coverage
 ```
+
+## Tech stack
+
+Technologies used
+* Nodejs + koajs + npm
+* TypeScript
+* Jest for unit testing
+* A couple of amazing npm modules, see package.json file for more information
 
 ## Possible improvements
 

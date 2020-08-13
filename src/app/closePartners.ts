@@ -3,7 +3,7 @@ import { isPartnerNearby } from "../utils";
 
 /**
  * Fetches a list with a partners which will attend the birthday, i.e.
- * are within 100km from Sofia's office.
+ * everyone which are within 100km from Sofia's office.
  *
  * It also uses isPartnerNearby() which calculates partner's coordinates.
  *

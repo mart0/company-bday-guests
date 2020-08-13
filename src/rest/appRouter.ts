@@ -7,9 +7,8 @@ export function createAppRouter(): Router {
     const router: Router = new Router();
 
     router.get("SendInvitation", "/sendInvitations", async (ctx, next) => {
-        const result = await sendInvitations(ctx);
-
         try {
+            const result = await sendInvitations(ctx);
             ctx.body = result;
             ctx.status = HttpStatusCodes.OK;
         } catch (err) {
